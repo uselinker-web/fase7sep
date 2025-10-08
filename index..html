@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+ 
+
+
+
+<!-- ***********seccion css3  -->
+
+  <style>
+
+* {
+ margin: 0px;
+ padding: 0px;
+ }
+
+
+ h1 {
+ font: bold 20px verdana, sans-serif;
+ }
+ h2 {
+ font: bold 14px verdana, sans-serif;
+ }
+
+ header, section, footer, aside, nav, article, figure, figcaption,
+ hgroup{
+ display: block;
+ }
+
+
+ body {
+ text-align: center;
+ }
+
+
+ #imagen1 {
+  display: block;
+  text-align: center; 
+ }
+
+ #agrupar {
+ width: 960px;
+ margin: 15px auto;
+ text-align: left;
+ }
+
+
+ #cont1 {
+ margin: 15px auto;
+ text-align: center;
+ }
+
+
+
+ #cabecera {
+ background: #FFFBB9;
+ border: 1px solid #999999;
+ padding: 20px;
+ }
+
+
+
+
+
+
+ #menu {
+ background: #1974AF;
+ padding: 5px 15px;
+
+ }
+
+ 
+ #menu li {
+  display: inline-block;
+  list-style: none;
+  padding: 3px;
+  font: bold 14px verdana, sans-serif;
+   
+ }
+
+
+
+ #menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  text-decoration: none;
+ }
+
+
+ #menu li a:hover:not(.active) {
+  background-color: #111;
+ }
+
+
+
+ #menu .active{
+  background-color: #4CAF50;
+  }
+
+
+
+
+
+
+
+
+
+
+ #seccion {
+ float: left;
+ width: 900px;
+ margin: 20px;
+ }
+
+
+
+ #columna {
+ float: left;
+ width: 220px;
+ margin: 20px 0px;
+ padding: 20px;
+ background: #CCCCCC;
+ }
+
+
+
+  #pie {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #999999;
+  }
+
+
+
+
+ article {
+ background: #FFFBCC;
+ border: 1px solid #999999;
+ padding: 20px;
+ margin-bottom: 15px;
+ }
+ article footer {
+ text-align: right;
+ }
+ time {
+ color: #999999;
+ }
+ figcaption {
+ font: italic 14px verdana, sans-serif;
+ }
+
+
+ #principal {
+ display: block;
+ width: 500px;
+ margin: 50px auto;
+ padding: 15px;
+ text-align: center;
+ border: 1px solid #999999;
+ background: #DDDDDD;
+ }
+ #titulo {
+ font: bold 36px verdana, sans-serif;
+ }
+
+
+
+
+
+
+</style>
+
+
+<!--  *****************fin de seccion css3 -->
+
+
+
+
+
+<!--  **********codigo javascript -->
+
+
+<script>
+
+
+//function iniciar(){
+
+
+ /*
+   var elemento=document.getElementById('lienzo');
+
+      lienzo=elemento.getContext('2d');
+
+
+   var gradiente=lienzo.createLinearGradient(0,0,250,0,0,300);
+       gradiente.addColorStop(0.5, '#0000FF');
+       gradiente.addColorStop(1, '#000000');
+       lienzo.fillStyle=gradiente;
+       lienzo.fillRect(5,20,150,120);
+       lienzo.fillRect(170,10,200,150);  
+       
+  */
+      
+ 
+
+
+//  var op1 = document.getElementById('opcion1');
+//  op1.addEventListener('click', function(){
+  
+//   alert('!Ha presionado click¡');
+//  
+//   prompt("Ingrese su contraseña:");
+
+//  }
+
+
+  function mostrarimagen( nUm ) {
+
+   
+   let cadena1 = "<h1> Prueba de menu </h1>";
+   let op1 = document.getElementById('cont1');
+   let opimg = document.getElementById('cuadro');    
+
+
+    switch(nUm){
+
+     case 1:
+       opimg.src = "obj_general.jpg";
+       opimg.width = "684"
+       opimg.eight = "297"     
+
+       break;
+     case 2:
+       opimg.src = "obj_especifico.jpg"; 
+       opimg.width = "774"
+       opimg.eight = "271" 
+
+       break;
+     case 3:
+       opimg.src = "estrategias_solucion.jpg"; 
+       opimg.width = "759"
+       opimg.eight = "259" 
+       break;
+     case 4:
+       opimg.src = "esquema_detrabajo.jpg"; 
+       opimg.width = "640"
+       opimg.eight = "381" 
+       break;
+     case 5:
+       opimg.src = "diagramaflujo.jpg"; 
+       opimg.width = "582"
+       opimg.eight = "622" 
+       break;
+     case 6:
+       opimg.src = "diagramagantt.jpg"; 
+       opimg.width = "846"
+       opimg.eight = "684"   
+     break;
+
+
+
+     default:
+       
+    }    
+
+
+
+
+   
+
+  // op1.innerHTML = cadena1;
+
+  
+  }
+
+
+
+
+
+
+      
+   
+
+
+//}    
+
+//   window.addEventListener("load", iniciar, false); 
+
+
+
+
+</script>
+
+
+<!--  *****************fin codigo javascript -->
+
+
+
+  <meta charset="iso-8859-1" />
+  <meta description ="Practica HTML5, CSS3, JavaScript" />
+  <meta keyboards=""HTML 5, CSS3, JavaScript" />
+  <title> HTML5, CSS3, JavaScrip </title> 
+</head>
+
+
+
+
+<!--  *****************Inicio  -->
+<!--  *****************cuerpo  -->
+<!--  *****************del programa -->
+
+
+
+
+
+
+
+<body>
+
+ <DIV ID="agrupar">  
+
+
+    <DIV ID = "imagen1">
+        <img src = "img_logo.jpg" alt="Imagen no disponible" width = "600px"> 
+    </div>
+
+
+  <nav id="menu">
+
+    <ul>
+  
+    <li><a href="#" onclick="mostrarimagen(1)">Objetivo general </a></li>
+    <li><a href="#" onclick="mostrarimagen(2)">Ojetivos especificos</a></li>
+    <li><a href="#" onclick="mostrarimagen(3)" >Estrategias de solución</a></li>
+    <li><a href="#" onclick="mostrarimagen(4)">Esquema</a></li>
+    <li><a href="#" onclick="mostrarimagen(5)" >Diagrama de flujo</a></li>
+    <li><a href="#" onclick="mostrarimagen(6)">Diagrama de Gantt</a></li>
+
+    </ul>
+
+
+
+  </nav>
+
+
+  <section id="seccion">
+
+
+    <article>
+
+     <div id="cont1">
+
+      <img id="cuadro" src = "obj_general.jpg" alt="Imagen no disponible" width = "600px"> 
+
+     </div>
+
+
+    </article>
+
+
+
+
+  </section>
+
+
+
+ 
+  <footer id="pie">
+    
+    <small> Derechos reservados &copy; 2025 </small>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>
+
